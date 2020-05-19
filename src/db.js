@@ -3,6 +3,7 @@
 
 // import prisma from prisma-binding
 const { Prisma } = require('prisma-binding');
+console.log('env file', process.env.PRISMA_ENDPOINT);
 
 // create and instance of the db, using env variables
 const db = new Prisma({
